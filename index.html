@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 m-0 p-0">
+    <header class="bg-slate-700 h-16 px-6 flex items-center justify-between text-white">
+        <div class="flex items-center gap-6">
+          <h2 class="text-xl font-bold tracking-tight">Discount Analyzer</h2>
+          <span class="h-5 w-px bg-slate-500 hidden sm:block"></span>
+          <h4 class="text-sm font-medium text-slate-300 hidden sm:block">Final price calculator and discount savings for e-commerce</h4>
+        </div>
+      </header>
+      <div class="container my-12 mx-auto bg-slate-800 p-6 w-full max-w-sm rounded-2xl shadow-xl border border-slate-700" id="contanier">
+        <input type="number" class="block mx-auto w-full max-w-xs my-2.5 p-2.5 text-white font-semibold placeholder:font-normal bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:border-transparent outline-none transition-all placeholder:text-slate-500" id="inp1" placeholder="Enter Original price">
+        <input type="number" class="block mx-auto w-full max-w-xs my-2.5 p-2.5 text-white font-semibold placeholder:font-normal bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:border-transparent outline-none transition-all placeholder:text-slate-500" id="inp2" placeholder="Enter Discount percentage">
+        <input type="number" class="block mx-auto w-full max-w-xs my-2.5 p-2.5 text-white font-semibold placeholder:font-normal bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:border-transparent outline-none transition-all placeholder:text-slate-500" id="inp3" placeholder="Enter sales tax">
+        <input type="number" class="block mx-auto w-full max-w-xs my-2.5 p-2.5 text-white font-semibold placeholder:font-normal bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:border-transparent outline-none transition-all placeholder:text-slate-500" id="inp4" placeholder="Enter Extra discount coupon">
+        <button id="btn" class="w-full max-w-xs bg-gradient-to-r from-fuchsia-600 to-pink-600 hover:from-fuchsia-700 hover:to-pink-700 block m-auto text-white p-2.5 font-bold rounded-xl shadow-lg shadow-fuchsia-950/40 transition-all active:scale-95 my-4">Calculate the final price</button>
+        <h3 id="h3" class="text-center text-fuchsia-400 font-bold text-xl empty:hidden mt-2"></h3>
+      </div>      
+    <script src="main.js"></script>
+</body>
+</html>
