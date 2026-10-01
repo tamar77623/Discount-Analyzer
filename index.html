@@ -21,6 +21,45 @@
         <input type="number" class="block mx-auto w-full max-w-xs my-2.5 p-2.5 text-white font-semibold placeholder:font-normal bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-fuchsia-500 focus:border-transparent outline-none transition-all placeholder:text-slate-500" id="inp4" placeholder="Enter Extra discount coupon">
         <button id="btn" class="w-full max-w-xs bg-gradient-to-r from-fuchsia-600 to-pink-600 hover:from-fuchsia-700 hover:to-pink-700 block m-auto text-white p-2.5 font-bold rounded-xl shadow-lg shadow-fuchsia-950/40 transition-all active:scale-95 my-4">Calculate the final price</button>
         <h3 id="h3" class="text-center text-fuchsia-400 font-bold text-xl empty:hidden mt-2"></h3>
+        <div class="hidden space-y-4 bg-slate-900/90 border border-slate-800 p-6 rounded-2xl shadow-2xl backdrop-blur-md transition-all duration-300" id="result">
+  
+          <div class="space-y-2.5 divide-y divide-slate-800/60">
+            <p class="pt-2 text-slate-300 font-medium text-base md:text-lg flex justify-between items-center">
+              <span>Discount Amount:</span>
+              <span class="font-bold text-slate-100 font-mono text-xl"><span id="resDiscount">0.00</span>$</span>
+            </p>
+        
+            <p class="pt-2 text-slate-300 font-medium text-base md:text-lg flex justify-between items-center">
+              <span>Price After Discount and Coupon:</span>
+              <span class="font-bold text-slate-100 font-mono text-xl"><span id="resDiscountedPrice">0.00</span>$</span>
+            </p>
+        
+            <p class="pt-2 text-slate-300 font-medium text-base md:text-lg flex justify-between items-center">
+              <span>Tax Amount:</span>
+              <span class="font-bold text-slate-100 font-mono text-xl"><span id="resTax">0.00</span>$</span>
+            </p>
+        
+            <p class="pt-2 text-emerald-400 font-semibold text-lg md:text-xl flex justify-between items-center">
+              <span>Final Price:</span>
+              <span class="font-extrabold text-emerald-400 font-mono text-2xl"><span id="resFinalPrice">0.00</span>$</span>
+            </p>
+        
+            <p class="pt-2 text-slate-300 font-medium text-base md:text-lg flex justify-between items-center">
+              <span>Total Savings:</span>
+              <span class="font-bold text-fuchsia-400 font-mono text-xl"><span id="resTotalSavings">0.00</span>$</span>
+            </p>
+        
+            <p class="pt-2 text-slate-300 font-medium text-base md:text-lg flex justify-between items-center">
+              <span>Savings Percentage:</span>
+              <span class="font-bold text-fuchsia-400 font-mono text-xl"><span id="resSavingsPercentage">0</span>%</span>
+            </p>
+          </div>
+        
+          <button id="btn2" class="w-full max-w-xs bg-gradient-to-r from-fuchsia-600 to-pink-600 hover:from-fuchsia-500 hover:to-pink-500 text-white p-3 font-bold rounded-xl shadow-lg shadow-fuchsia-950/50 transition-all duration-200 active:scale-95 block mx-auto my-4 hidden cursor-pointer">
+            Clear Result
+          </button>
+        
+        </div>
       </div>      
     <script src="main.js"></script>
 </body>
